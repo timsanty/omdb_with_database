@@ -10,11 +10,11 @@ configure do
 end
 
 get '/' do
-  erb :search
+  #Add code here
 end
 
 
-#You will add code here
+#Add code here
 
 
 get '/movies/new' do

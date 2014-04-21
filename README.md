@@ -14,8 +14,12 @@ You have also been given a working feature to add movies to the databse. There i
 ###Phase One
 _________________
 
-**Add a search form on your search.erb page.**  
-Remember to ask yourself, "where should this form go?"  
+**Add a search form**  
+
+1. Have your root path (-> `"/"`), render an erb page
+2. Add a form to search for a movie on this page
+
+  *Hint: Remember to ask yourself, "where should this form go?"*  
 
 ###Phase Two  
 __________________
