@@ -32,9 +32,6 @@ __________________
 
 *Hint: Remember, that the results will be returned in an array.*  
 
-**Display your results**  
-Create a view page to view your results.  
-
 ###Phase Three
 ____________________
 
@@ -44,3 +41,12 @@ When your users click on a title it should take them to a page with details just
 1. Add a new route for your details link to go to
 2. Add some code in here that will look up a movie by it's id
 3. Add a view page to display your movie details
+
+###Phase Four
+_____________________
+
+**Add Actors**  
+
+1. In your psql console *(from the terminal)*, make sure you have actors, and that they can be joined to movies  
+2. In your movie details route, lookup a movie, and the actors associted with that movie.  
+3. Display information for the movie and the actors in the movie details page.  
