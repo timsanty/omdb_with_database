@@ -40,7 +40,7 @@ post '/movies' do
 end
 
 def dbname
-  "moviessite"
+  "test.db"
 end
 
 def create_movies_table
@@ -49,7 +49,9 @@ def create_movies_table
   CREATE TABLE movies (
     id SERIAL PRIMARY KEY,
     title varchar(255),
-    year varchar(255)
+    year varchar(255),
+    plot text,
+    genre varchar(255)
   );
   }
   connection.close
