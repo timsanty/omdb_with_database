@@ -21,8 +21,12 @@ Remember to ask yourself, "where should this form go?"
 __________________
 
 **Search for a movie in your database**  
-Write code to search for a movie in your database using the params from your search form.  
-Remember, the results that will be returned are an array.  
+
+1. Add a route to send your search form to
+2. Add code that will seach for movies based on the title your user searched for
+3. Add a view page to display these results
+
+*Hint: Remember, that the results will be returned in an array.*  
 
 **Display your results**  
 Create a view page to view your results.  
@@ -32,5 +36,7 @@ ____________________
 
 **Add a movies detail feature.**  
 When your users click on a title it should take them to a page with details just for that movie.  
-This will involve creating a new route, and a new view page.  
-*Hint: it will also involve passing some params, and searching for a movie by it's id*  
+
+1. Add a new route for your details link to go to
+2. Add some code in here that will look up a movie by it's id
+3. Add a view page to display your movie details

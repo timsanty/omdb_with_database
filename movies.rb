@@ -13,19 +13,9 @@ get '/' do
   erb :search
 end
 
-get '/index' do
-  connection = PGconn.new(:host => "localhost", :dbname => dbname)
 
-  connection.close
-  erb :index
-end
+#You will add code here
 
-get '/movies/:id' do
-  connection = PGconn.new(:host => "localhost", :dbname => dbname)
-
-  connection.close
-  erb :show
-end
 
 get '/movies/new' do
   erb :new_movie
