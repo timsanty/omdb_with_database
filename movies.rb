@@ -10,16 +10,34 @@ configure do
 end
 
 get '/' do
-  #Add code here
+erb :search
 end
 
 
+get '/results' do
+#user input coming from search.erb.  sending request to database and setting variable to be used
+  #in display.erb
+  c = PGconn.new(:host => "localhost", :dbname => dbname)
+  @movie_results = c.exec_params("SELECT * movies WHERE title =$1;"), [params["title"]]
+  c.close
+
+erb :display
+end
 #Add code here
 
 
 get '/movies/new' do
-  erb :new_movie
+  erb :new
 end
+
+
+get '/movies/:id' do
+
+erb :movie_detail
+end
+
+
+  #can set instance variable @movies to = c.exec and get an array from that
 
 post '/movies' do
   c = PGconn.new(:host => "localhost", :dbname => dbname)
@@ -30,7 +48,7 @@ post '/movies' do
 end
 
 def dbname
-  "test.db"
+  "testdb"
 end
 
 def create_movies_table

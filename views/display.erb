@@ -1,0 +1,11 @@
+
+
+<% #will receive instance variable with all results from database.  will display as links to movie detail %>
+<% # print out array from instance variable%>
+
+<% @movies_results.each do |movie| %>
+	<a href="/movie/<%= movie['id'] %>"> ><%= movie["title"]%></a>
+	<%= movie["year"] %>
+<% end %>
+
+
